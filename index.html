@@ -1,0 +1,76 @@
+<!DOCTYPE html><!-- inicia o código -->
+<html lang="pt-BR"> <!-- aqui é a linguagem que será usada no desenvolvimento do site -->
+
+<head> <!-- aqui começa a cabeça do código que contém informações de configuração mais restrita da página -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./src/imagens/spiderman.ico" type="image/x-icon"> <!-- esse link determina o icone da pagina, que fica ao lado do titulo na aba do navegador, se dá pelo atalho link:favicon -->
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet"><!-- aqui possui a configuração das fontes que eu escolhi no google fontes, o link possui as fontes que selecionei por lá -->
+
+    <link rel="stylesheet" href="./src/css/reset.css"><!-- serve pra linkar o html com o css, através do atalho link:css-->
+
+    <link rel="stylesheet" href="./src/css/estilos.css"><!-- serve pra linkar o html com o css, através do atalho link:css-->
+    
+    <link rel="stylesheet" href="./src/css/responsive.css"><!-- serve pra linkar o html com o css, através do atalho link:css-->
+    
+    <title>Homem-aranha Sem Volta Para Casa</title><!-- aqui possui o titulo da pagina -->
+
+</head><!-- aqui termina a cabeça do código -->
+
+<body> <!-- aqui começa a corpo do código que contém a estrutura em si da página-->
+
+    <div class="fundo-video"> <!-- criei uma div(bloco) para armazenar o fundo da página, e depois estilizar pelo css -->
+        <video class="video" autoplay loop muted> <!-- a tag video foi chamada para criar um video de fundo para a pagina, o autoplay faz com que o video rode automaticamente ao abrir a página, o loop faz o video rode denovo quando acaba, o muted deixa o video mutado, tirando a possibilidade de incomodar o usuário -->
+            <source src="./src/video/spiderman-video.mp4" type="video/mp4"><!-- coloquei a tag source(fonte de recurso) para determinar onde está localizado o video que quero que rode, o type serve para determinar o formato do video-->
+        </video>
+    </div><!-- fechei uma div(bloco)  -->
+
+    <header class="cabecalho"><!-- criação do cabeçalho do código -->
+        <a>
+            <img class="logo" src="./src/imagens/logomarvel.png" alt="logo marvel">
+        </a>
+        <nav><!-- tag para criar um menu de navegação -->
+            <ul class="menu"><!-- a tag ul é para criar listas não ordenadas -->
+                <li><a href="#">Home</a></li>
+                <li><a href="">Detalhes</a></li>
+                <!-- adicionei dois itens na lista com a tag <li> -->
+            </ul><!-- fecha tag da lista -->
+        </nav><!-- fecha tag da navigation -->
+    </header><!-- fecha tag do cabeçalho -->
+    <main class="container"><!-- criei a tag main, reponsável pela parte principal da página -->
+
+        <div class="informacoes"> <!-- criei mais uma div(bloco), contendo as informações da parte principal da página -->
+
+            <img class="imagem-titulo" src="./src/imagens/spiderman-title.png" alt="titulo logo"> <!-- chamei a imagem do titulo do filme -->
+
+            <p><!-- a tag p cria um parágrafo, onde eu armazenei um resumo do filme -->
+                O Homem-aranha se depara com novas aventuras relacionadas ao multiverso, Peter Parker precisa fazer com
+                que esqueçam que ele é o Homem-aranha, pede para que o Doutor estranho faça um feitiço fazendo todo
+                mundo esquecer quem é o Homem-aranha, mas algo não sai como esperado, adentre em um filme cheio de magia
+                e plot-twists
+            </p> <!-- fecha tag da do parágrafo -->
+            <button class="botao-trailer"><!-- criei um botão para ver o trailer, que será configurado em css e javascript -->
+                Veja o trailer!
+            </button><!-- fecha tag do botão -->
+        </div> <!-- fecha tag da div(bloco) -->
+        <img class="spiderman-chars" src="./src/imagens/spiderman-chars.png" /> <!-- criei uma tag de imagem para incluir a imagem dos personagens na página -->
+
+        <div class="modal">
+            <div class="conteudo-modal">
+                <span class="fechar-modal">X</span>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/CyiiEJRZjSU" title="Trailer Oficial" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </main> <!-- fecha tag main -->
+    <script src="./src/js/index.js"></script>
+</body><!-- fecha tag do corpo -->
+
+</html><!-- finaliza o código -->
+
+<!-- todas tags que irei estilizar e configurar com o CSS, atribuí uma classe com um nome respectivo a cada uma pela tag class="" -->

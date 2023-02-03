@@ -1,0 +1,13 @@
+* {
+    margin: 0; /* serve para alterar as margens dos elementos da página, espaçamento externo*/
+    padding: 0;/* serve para dar espaçamento do conteúdo para a borda do elemento, espaçamento interno*/
+    box-sizing: border-box;/* facilita os espaçamentos entre elementos*/
+}
+ul{
+    list-style: none;/* define o tipo da lista, numerada ou desordenada por exemplo, nesse caso está none(sem nenhum tipo)*/
+}
+
+a{
+    text-decoration: none;/* define a decoração do texto*/
+}
+/* Esse arquivo de reset tem o objetivo de "zerar"/resetar as configurações padrão do site, como espaçamento e estilo de listas por exemplo*/
